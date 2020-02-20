@@ -1,0 +1,7 @@
+{
+  "name": "gymh",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
