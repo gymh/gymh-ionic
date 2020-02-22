@@ -1,9 +1,68 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>settings</ion-title>
+    <ion-title>Einstellungen</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <div id="container">
+    <h4>Allgemeine Einstellungen</h4>
+    <ion-item>
+      <ion-label position="floating">Vertretungsplan-Filter</ion-label>
+      <ion-input placeholder="Klasse/ Jahrgangsstufe"></ion-input>
+    </ion-item>
+    <ion-list>
+      <ion-item>
+        <ion-text>vollständige Lehrernamen anzeigen</ion-text>
+        <ion-checkbox
+          slot="end"
+          value="lehrernamen"
+          (click)="updateSetting('lehrernamen')"
+        ></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-text>Wochenübersicht statt Vertretungsplan</ion-text>
+        <ion-checkbox
+          slot="end"
+          value="wochenview"
+          (click)="updateSetting('wochenview')"
+        ></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-text>
+          Vertretungsplan in Textform statt in tabellarischer Form anzeigen
+        </ion-text>
+        <ion-checkbox
+          slot="end"
+          value="textview"
+          (click)="updateSetting('textview')"
+        ></ion-checkbox>
+      </ion-item>
+    </ion-list>
+    <h4>Elternportal-Integration</h4>
+    <ion-list>
+      <ion-item>
+        <ion-text>Elternportal-Integration</ion-text>
+        <ion-checkbox slot="end" checked></ion-checkbox>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">E-Mail Adresse</ion-label>
+        <ion-input type="email" placeholder="E-Mail Adresse"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Passwort</ion-label>
+        <ion-input type="password" placeholder="Passwort"></ion-input>
+      </ion-item>
+      <ion-button expand="full">Anmelden + Zugangsdaten speichern</ion-button>
+      <ion-button fill="clear" expand="full">über diese Funktion</ion-button>
+    </ion-list>
+    <h4>App-Design</h4>
+    <ion-button color="tertiary" expand="full">Theme</ion-button>
+    <ion-button color="primary" expand="full">Theme</ion-button>
+    <ion-button color="success" expand="full">Theme</ion-button>
+    <ion-button color="danger" expand="full">Theme</ion-button>
+    <ion-button color="warning" expand="full">Theme</ion-button>
+  </div>
 </ion-content>

@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   public appPages = [
     {
       title: "News",
-      url: "/views/Inbox",
+      url: "/views/News",
       icon: "newspaper"
     },
     {
@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
     },
     {
       title: "Speiseplan",
-      url: "/views/Speiseplan",
+      url: "/pages/speiseplan",
       icon: "fast-food"
     },
     {
@@ -49,12 +49,12 @@ export class AppComponent implements OnInit {
     },
     {
       title: "Einstellungen",
-      url: "/views/Einstellungen",
+      url: "/pages/settings",
       icon: "settings"
     },
     {
       title: "Info",
-      url: "/views/Info",
+      url: "/pages/about",
       icon: "information"
     }
   ];
