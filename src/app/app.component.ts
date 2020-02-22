@@ -22,25 +22,40 @@ export class AppComponent implements OnInit {
       url: "/views/Vertretungsplan",
       icon: "menu"
     },
-    // {
-    //   title: 'Favorites',
-    //   url: '/views/Favorites',
-    //   icon: 'heart'
-    // },
-    // {
-    //   title: 'Archived',
-    //   url: '/views/Archived',
-    //   icon: 'archive'
-    // },
-    // {
-    //   title: 'Trash',
-    //   url: '/views/Trash',
-    //   icon: 'trash'
-    // },
+    {
+      title: "Notizen",
+      url: "/views/Notizen",
+      icon: "list"
+    },
+    {
+      title: "ToDo",
+      url: "/views/ToDo",
+      icon: "list"
+    },
+    {
+      title: "Termine",
+      url: "/views/Termine",
+      icon: "calendar"
+    },
+    {
+      title: "Speiseplan",
+      url: "/views/Speiseplan",
+      icon: "fast-food"
+    },
+    {
+      title: "Stundenplan",
+      url: "/views/Stundenplan",
+      icon: "time"
+    },
     {
       title: "Einstellungen",
       url: "/views/Einstellungen",
       icon: "settings"
+    },
+    {
+      title: "Info",
+      url: "/views/Info",
+      icon: "information"
     }
   ];
 
