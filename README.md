@@ -10,3 +10,6 @@ let's make this easier to develop
 ---
 
 ### crossnative Ionic App for GymH
+
+### add page
+- `ionic g page pages/<name>`

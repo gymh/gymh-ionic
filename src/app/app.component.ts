@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
     },
     {
       title: "Termine",
-      url: "/views/Termine",
+      url: "/pages/termine",
       icon: "calendar"
     },
     {

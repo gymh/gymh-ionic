@@ -16,16 +16,16 @@
         <ion-text>vollständige Lehrernamen anzeigen</ion-text>
         <ion-checkbox
           slot="end"
-          value="lehrernamen"
-          (click)="updateSetting('lehrernamen')"
+          id="lehrernamen"
+          (ionChange)="updateSetting($event)"
         ></ion-checkbox>
       </ion-item>
       <ion-item>
         <ion-text>Wochenübersicht statt Vertretungsplan</ion-text>
         <ion-checkbox
           slot="end"
-          value="wochenview"
-          (click)="updateSetting('wochenview')"
+          id="wochenview"
+          (ionChange)="updateSetting($event)"
         ></ion-checkbox>
       </ion-item>
       <ion-item>
@@ -34,8 +34,8 @@
         </ion-text>
         <ion-checkbox
           slot="end"
-          value="textview"
-          (click)="updateSetting('textview')"
+          id="textview"
+          (ionChange)="updateSetting($event)"
         ></ion-checkbox>
       </ion-item>
     </ion-list>
@@ -43,10 +43,11 @@
     <ion-list>
       <ion-item>
         <ion-text>Elternportal-Integration</ion-text>
-        <ion-checkbox slot="end" checked></ion-checkbox>
+        <ion-checkbox slot="end" id="elternportal"
+        (ionChange)="updateSetting($event)"></ion-checkbox>
       </ion-item>
     </ion-list>
-    <ion-list>
+    <ion-list id="elternportal_config">
       <ion-item>
         <ion-label position="floating">E-Mail Adresse</ion-label>
         <ion-input type="email" placeholder="E-Mail Adresse"></ion-input>
@@ -59,7 +60,7 @@
       <ion-button fill="clear" expand="full">über diese Funktion</ion-button>
     </ion-list>
     <h4>App-Design</h4>
-    <ion-button color="tertiary" expand="full">Theme</ion-button>
+    <ion-button color="tertiary" expand="full" (click) ="alert('dfa')">Theme</ion-button>
     <ion-button color="primary" expand="full">Theme</ion-button>
     <ion-button color="success" expand="full">Theme</ion-button>
     <ion-button color="danger" expand="full">Theme</ion-button>
